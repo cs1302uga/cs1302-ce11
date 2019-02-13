@@ -1,4 +1,4 @@
-# cs1302-ce11 Title TBD
+# cs1302-ce11 Title 
 
 > Roses are red. 
 > Violets are blue. 
@@ -45,7 +45,9 @@ command depends on your present working directory), then please note that contex
    within `src`.
 
 ```java
-package cs1302.listadt;
+package cs1302.list;
+
+import cs1302.listadt.StringList;
 
 public class Driver {
 
@@ -83,7 +85,16 @@ public class Driver {
    ```
   
    
-1. In your notes, write your expected output    
+1. In your notes, write your expected output for the four `System.out.println` statements in the code based 
+   on your diagram created in the previous step. 
+   
+1. Make sure you are in the `cs1302-ce11` directory. Write the exact command to:
+   1. Compile `Driver.java` specifying `bin` as the default package location for your compiled code.
+   1. Run `cs1302.list.Driver`.
+
+1. Write the output from the program in your notes. If your expected output does not match the output from the 
+   program execution, repeat the last three steps using a new piece of paper.
+   
 **CHECKPOINT**
 
 1. 
