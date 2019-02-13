@@ -29,19 +29,17 @@ command depends on your present working directory), then please note that contex
    $ git clone --depth 1 https://github.com/cs1302uga/cs1302-ce11.git
    ```
 
-1. **[ALL GROUP MEMBERS]**
-   If you did not setup your Git username and email on Nike when working on `cs1302-ce07`,
-   then please revist that exercise and follow the instructions presented there.
-
 1. Change into the `cs1302-ce11` directory that was just created and look around. There should be
-   multiple Java files contained within the directory structure. To see a listing of all of the 
-   files under the `src` subdirectory, use the `find` command as follows:
+   almost nothing there! That's okay. Use the following to download the JAR file that accompanies your
+   `cs1302-listadt` project:
    
    ```
-   $ find src
+   $ wget https://github.com/cs1302uga/cs1302-listadt/raw/master/listadt.jar
    ```
-
-
+   
+   **NOTE:** This is a separate download. When you followed (or follow) the instructions provided
+   in the project description for how to download the project, you will automatically get a copy of
+   the JAR file that you can use with the project.
 
 **CHECKPOINT**
 
