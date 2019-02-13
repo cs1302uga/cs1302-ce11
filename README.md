@@ -1,4 +1,4 @@
-# cs1302-ce11 Title 
+# cs1302-ce11 Lovable Linked Lists 
 
 > Roses are red. 
 > Violets are blue. 
