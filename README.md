@@ -76,6 +76,11 @@ public class Driver {
    associated string is also a reference, you may draw it within the node. Number each step in your notes.
    
    Example:
+   ```
+                   /--------------------\        /-----------------------\
+   example ------->| str: Hello; next: -|------->| str: null; next: null |
+                   \--------------------/        \-----------------------/
+   ```
   
    
 1. In your notes, write your expected output    
