@@ -98,9 +98,23 @@ public class Driver {
    
 **CHECKPOINT**
 
-1. 
+1. In `Driver.java`, add a method to print the string value of the third `StringList.Node` in the list. Your
+   method should take a single `StringList.Node` parameter representing the starting node. The method must
+   begin with the starting node and traverse the `next` links to print the third node.
+   
+1. In your notes, write down the expected output of calling your new method from `main` passing with 
+   the preexisting `StringList.Node` references (`end`, `node`, and `n`) as the actual parameters.
 
-1. 
+1. From the `main` method of `Driver.java`, make three separate calls to your new method using `end`, `node`,
+   and `n` as the actual parameters.
+   
+1. Compile and run your `Driver` program. 
+
+1. Write the output from the program in your notes. If your expected output does not match the output from the 
+   program execution, indicate the reason(s) in your notes.
+   
+1. Your `Driver` program likely threw an unchecked exception when you ran it. Update your code to handle this 
+   type of error instead of crashing. In your notes, explain how you handled it and why you handled it this way.
 
 **CHECKPOINT**
 
@@ -108,3 +122,4 @@ public class Driver {
 
 1.
 
+**CHECKPOINT**
