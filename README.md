@@ -9,6 +9,7 @@ This class exercise explores how to work with linked lists.
 ## Prerequisite Knowledge
 
 * Reference variables.
+* [`StringList.Node` API Documentation](http://cobweb.cs.uga.edu/~mec/cs1302/listadt-api/cs1302/listadt/StringList.Node.html)
 
 ## Questions
 
@@ -39,6 +40,10 @@ command depends on your present working directory), then please note that contex
    in the project description for how to download the project, you will automatically get a copy of
    the JAR file that you can use with the project.
 
+1. For convenience, here is a link to the 
+   [`StringList.Node` API Documentation](http://cobweb.cs.uga.edu/~mec/cs1302/listadt-api/cs1302/listadt/StringList.Node.html).
+   What is the FQN of the _package_ that contains `StringList.Node`?
+
 1. Create a `Driver` program using the code below. Make sure you place the file in the proper directory
    within `src`.
 
@@ -60,10 +65,10 @@ command depends on your present working directory), then please note that contex
             StringList.Node n = node.getNext();
             n.setNext(new StringList.Node("Simon"));
 
-            System.out.println(end.getNext());           // Output 1
-            System.out.println(node.getNext().getStr()); // Output 2
-            System.out.println(n.getNext().getNext());   // Output 3
-            System.out.println(n.getNext().getStr());    // Output 4
+            System.out.println(end.getNext());           
+            System.out.println(node.getNext().getStr()); 
+            System.out.println(n.getNext().getNext());   
+            System.out.println(n.getNext().getStr());    
 
         } // main
         
@@ -87,11 +92,15 @@ command depends on your present working directory), then please note that contex
   
    
 1. In your notes, write your expected output for the four `System.out.println` statements in the code based 
-   on your diagram created in the previous step. 
+   on the diagram you created in the previous step. 
    
 1. Make sure you are in the `cs1302-ce11` directory. Write the exact command to:
    1. Compile `Driver.java` specifying `bin` as the default package location for your compiled code.
    1. Run `cs1302.list.Driver`.
+   
+   **NOTE:** This program depends depends on two different sets of compiled code, the compiled code you placed
+   into `bin` and the compiled code in the JAR file. You will need to place the default package for both 
+   compiled code locations on the class path in order to run your program.
 
 1. Write the output from the program in your notes. If your expected output does not match the output from the 
    program execution, repeat the last three steps using a new piece of paper.
