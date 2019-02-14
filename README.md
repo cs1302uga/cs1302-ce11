@@ -4,13 +4,11 @@
 > Violets are blue. 
 > `error: ';' expected` in `Driver.java` on line `142`.
 
-This class exercise explores how to TBD.
-It also revists how to commit and view changes to a local Git repository.
+This class exercise explores how to work with linked lists.
 
 ## Prerequisite Knowledge
 
-* Inheritance and polymorphism in Java.
-* UML Class Diagrams
+* Reference variables.
 
 ## Questions
 
@@ -44,38 +42,39 @@ command depends on your present working directory), then please note that contex
 1. Create a `Driver` program using the code below. Make sure you place the file in the proper directory
    within `src`.
 
-```java
-package cs1302.list;
+   ```java
+    package cs1302.list;
+    
+    import cs1302.listadt.StringList;
+    
+    public class Driver {
+    
+        public static void main(String[] args) {
+        
+            StringList.Node node = new StringList.Node();
+            node.setStr("Susan");
+            node.setNext(new StringList.Node("Sally"));
+            node.getNext().setNext(new StringList.Node("Barry"));
 
-import cs1302.listadt.StringList;
+            StringList.Node end = new StringList.Node("Supa Mike", node);
+            StringList.Node n = node.getNext();
+            n.setNext(new StringList.Node("Simon"));
 
-public class Driver {
+            System.out.println(end.getNext());           // Output 1
+            System.out.println(node.getNext().getStr()); // Output 2
+            System.out.println(n.getNext().getNext());   // Output 3
+            System.out.println(n.getNext().getStr());    // Output 4
 
-    public static void main(String[] args) {
-
-        StringList.Node node = new StringList.Node();
-        node.setStr("Susan");
-        node.setNext(new StringList.Node("Sally"));
-        node.getNext().setNext(new StringList.Node("Barry"));
-
-        StringList.Node end = new StringList.Node("Supa Mike", node);
-        StringList.Node n = node.getNext();
-        n.setNext(new StringList.Node("Simon"));
-
-        System.out.println(end.getNext());           // Output 1
-        System.out.println(node.getNext().getStr()); // Output 2
-        System.out.println(n.getNext().getNext());   // Output 3
-        System.out.println(n.getNext().getStr());    // Output 4
-
-    } // main
-} // Driver
-```
+        } // main
+    } // Driver
+    ```
 
 1. For each line in the program, draw a diagram that illustrates any nodes that have been created along with 
    their associated string values and next references. Since `next` is a reference, you would either need to 
    denote it as `null` or draw an arrow to the object it references. Redraw the entire picture after each line.
-   Reference variables that are not contained in Node objects should be included in the diagram. Although the 
-   associated string is also a reference, you may draw it within the node. Number each step in your notes.
+   Although the associated string is also a reference, you may draw it within the node. Number each step in 
+   your notes. Reference variables that are not contained in node objects should also be included in the 
+   diagram. 
    
    Example:
    ```
@@ -135,3 +134,13 @@ public class Driver {
    your instructor/TA that your method worked.
 
 **CHECKPOINT**
+
+<hr/>
+
+[![License: CC BY-NC-ND 4.0](https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-lightgrey.svg)](http://creativecommons.org/licenses/by-nc-nd/4.0/)
+
+<small>
+Copyright &copy; Michael E. Cotterell, Brad Barnes, and the University of Georgia.
+This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a> to students and the public.
+The content and opinions expressed on this Web page do not necessarily reflect the views of nor are they endorsed by the University of Georgia or the University System of Georgia.
+</small>
