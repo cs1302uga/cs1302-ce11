@@ -98,9 +98,9 @@ command depends on your present working directory), then please note that contex
    1. Compile `Driver.java` specifying `bin` as the default package location for your compiled code.
    1. Run `cs1302.list.Driver`.
    
-   **NOTE:** This program depends depends on two different sets of compiled code, the compiled code you placed
-   into `bin` and the compiled code in the JAR file. You will need to place the default package for both 
-   compiled code locations on the class path in order to run your program.
+   **NOTE:** This program depends on two different sets of compiled code: i) the compiled code you placed
+   into `bin`; and ii) the compiled code in the JAR file. You will need to place the paths to the default 
+   package locations for both on the class path in order to run your program.
 
 1. Write the output from the program in your notes. If your expected output does not match the output from the 
    program execution, repeat the last three steps using a new piece of paper.
