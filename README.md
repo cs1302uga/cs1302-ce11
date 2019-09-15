@@ -11,6 +11,13 @@ This class exercise explores how to work with linked lists.
 * Reference variables.
 * [`StringList.Node` API Documentation](http://cobweb.cs.uga.edu/~mec/cs1302/listadt-api/cs1302/listadt/StringList.Node.html)
 
+## Course-Specific Learning Outcomes
+
+* **LO1.d:** Use shell commands to compile new and existing software solutions that are organized into 
+multi-level packages and have external dependencies.
+* **LO7.c:** (Partial) Use common abstract data types and structures, including lists, queues, arrays, 
+and stacks in solving typical problems.  Generate user-facing API documentation for a software solution.
+
 ## Questions
 
 In your notes, clearly answer the following questions. These instructions assume that you are 
@@ -112,13 +119,13 @@ command depends on your present working directory), then please note that contex
 
 1. In `Driver.java`, add a method to print the string value of the third `StringList.Node` in the list. Your
    method should take a single `StringList.Node` parameter representing the starting node. The method must
-   begin with the starting node and traverse the `next` links to print the third node.
+   begin with the starting node (passed in as a parameter) and traverse the `next` links to print the third node.
    
 1. In your notes, write down the expected output of calling your new method from `main` passing in 
-   the preexisting `StringList.Node` references (`end`, `node`, and `n`) as the actual parameters.
+   the preexisting `StringList.Node` references (`a`, `b`, and `c`) as the actual parameters.
 
-1. From the `main` method of `Driver.java`, make three separate calls to your new method using `end`, `node`,
-   and `n` as the actual parameters.
+1. From the `main` method of `Driver.java`, make three separate calls to your new method using `a`, `b`,
+   and `c` as the actual parameters.
    
 1. Compile and run your `Driver` program. 
 
