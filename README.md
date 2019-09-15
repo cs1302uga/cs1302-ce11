@@ -173,22 +173,22 @@ command depends on your present working directory), then please note that contex
    assuming they're placed in the `main` method after all of the existing lines of code:
    
    ```java
-   printNode(a, 3);
-   printNode(b, 4);
-   printNode(c, 2);
+   printNode(a, 1);
+   printNode(b, 2);
+   printNode(c, 0);
    printNode(a.getNext(), 0);
-   printNode(c.getNext(), 2);
+   printNode(c.getNext(), 3);
    ```
 
 1. At the end of the `main` method of `Driver.java`, add the following lines of code
    if you haven't already:
    
    ```java
-   printNode(a, 3);
-   printNode(b, 4);
-   printNode(c, 2);
+   printNode(a, 1);
+   printNode(b, 2);
+   printNode(c, 0);
    printNode(a.getNext(), 0);
-   printNode(c.getNext(), 2);
+   printNode(c.getNext(), 3);
    ```
       
 1. Compile and run your `Driver` program. 
