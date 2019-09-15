@@ -9,7 +9,7 @@ This class exercise explores how to work with linked lists.
 ## Prerequisite Knowledge
 
 * Reference variables.
-* [`StringList.Node` API Documentation](http://cobweb.cs.uga.edu/~mec/cs1302/listadt-api/cs1302/listadt/StringList.Node.html)
+* [`StringList.Node` API Documentation](http://cobweb.cs.uga.edu/~mec/cs1302/listadt-api/cs1302/listadt/StringList.Node.html) [[mirror]](https://michaelcotterell.com/listadt-api/cs1302/listadt/StringList.Node.html)
 
 ## Course-Specific Learning Outcomes
 
