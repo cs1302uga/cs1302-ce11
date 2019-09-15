@@ -120,12 +120,11 @@ command depends on your present working directory), then please note that contex
 
 **CHECKPOINT**
 
-1. 1. **Please read this entire bullet point, including sub-bullets, before continuing.**
+1. **Please read this entire bullet point, including sub-bullets, before continuing.**
    For _each line_ in **`CODE BLOCK 4`, `CODE BLOCK 5`, `CODE BLOCK 6`, and `CODE BLOCK 7`**, 
    draw a diagram that illustrates any nodes that have been created along with their associated 
    `str` and `next` references. Like before, **redraw the entire picture after each line.** 
-   Here are some things
-   to note:
+   Here are some things to note:
    
    * Number each step in your notes, starting with 8 (which is the first line in `CODE BLOCK 4`).
      There are 8 lines among `CODE BLOCK 4`, `CODE BLOCK 5`, `CODE BLOCK 6`, and `CODE BLOCK 7`,
