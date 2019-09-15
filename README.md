@@ -148,41 +148,53 @@ command depends on your present working directory), then please note that contex
 
 1. In `Driver.java`, remove the last two Java instructions from the `main` method.
 
-1. In `Driver.java`, add a method to print the string value of the fourth `StringList.Node` starting from the 
-   specified `StringList.Node`. Your method should take a single `StringList.Node` parameter representing the 
-   starting node. The method must traverse the `next` links to print the fourth node's `String` value.
+1. In `Driver.java`, add a method to print the string value of an arbitrary `StringList.Node` starting from
+   some specified `StringList.Node`. **Below is the signature for the method you should implement,** including
+   some Javadoc documentation. You do **NOT** need to explicitly create and `throw` the `NullPointerException`
+   mentioned in the comment (it should get thrown automatically under the described condition). 
    
-1. In your notes, write down the expected output of calling your new method from `main` passing in 
-   the preexisting `StringList.Node` references (`a`, `b`, and `c`) as the actual parameters.
+   ```java
+   /**
+    * Prints the string value for a node. Starting with {@code node}, this method attempts
+    * to traverse {@code numLinks}-many {@code getNext()} links, then prints the result of 
+    * calling {@code getStr()} on the very last node in its traversal. 
+    *
+    * @param node      starting node
+    * @param numLinks  number of links to traverse
+    * @throws NullPointerException when an attempt is made to call {@code getStr()} or
+    *         {@code getNext()} using a {@code null} reference.
+    */
+   public static void printNode(StringList.Node node, int numLinks) {
+       ...
+   } // printNode
+   ```
+   
+1. In your notes, write down the expected output the following lines of code, 
+   assuming they're placed in the `main` method after all of the existing lines of code:
+   
+   ```java
+   printNode(a, 3);
+   printNode(b, 4);
+   printNode(c, 2);
+   printNode(a.getNext(), 0);
+   printNode(c.getNext(), 2);
+   ```
 
-1. From the `main` method of `Driver.java`, make three separate calls to your new method using `a`, `b`,
-   and `c` as the actual parameters.
+1. At the end of the `main` method of `Driver.java`, add the following lines of code
+   if you haven't already:
    
+   ```java
+   printNode(a, 3);
+   printNode(b, 4);
+   printNode(c, 2);
+   printNode(a.getNext(), 0);
+   printNode(c.getNext(), 2);
+   ```
+      
 1. Compile and run your `Driver` program. 
 
 1. Write the output from the program in your notes. If your expected output does not match the output from the 
    program execution, indicate the reason(s) in your notes.
-   
-1. Your `Driver` program likely threw an unchecked exception when you ran it. Update your code to handle this 
-   type of error instead of crashing. In your notes, explain how you handled it and why you handled it this way.
-
-**CHECKPOINT**
-
-1. In `Driver.java`, add a method to insert a `StringList.Node` into the third position in the list. It should 
-   shift the node currently at that position (if any) and any subsequent nodes to the right. Your 
-   method should take two `StringList.Node` parameters, one representing the starting node and another
-   representing a node to insert. The method must begin with the starting node and traverse the `next` links to
-   move toward the correct position. You should assume the node to insert is not already in the list.
-  
-1. In your notes, draw the expected linked list after calling your new insert method from `main` passing in 
-   the `b` reference as the starting point along with a new node containing the string "Cupid". Your diagram 
-   should illustrate any nodes that have been created along with their associated string values and next 
-   references.
-
-1. At the end of the `main` method of `Driver.java`, add the method call described in the previous step.
-   
-1. Write a method to verify that your insert method worked correctly. The output from this method should convince
-   your instructor/TA that your method worked.
 
 **CHECKPOINT**
 
