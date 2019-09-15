@@ -117,9 +117,11 @@ command depends on your present working directory), then please note that contex
    
 **CHECKPOINT**
 
-1. In `Driver.java`, add a method to print the string value of the third `StringList.Node` in the list. Your
-   method should take a single `StringList.Node` parameter representing the starting node. The method must
-   begin with the starting node (passed in as a parameter) and traverse the `next` links to print the third node.
+1. In `Driver.java`, remove the last two Java instructions from the `main` method.
+
+1. In `Driver.java`, add a method to print the string value of the fourth `StringList.Node` starting from the 
+   specified `StringList.Node`. Your method should take a single `StringList.Node` parameter representing the 
+   starting node. The method must traverse the `next` links to print the fourth node's `String` value.
    
 1. In your notes, write down the expected output of calling your new method from `main` passing in 
    the preexisting `StringList.Node` references (`a`, `b`, and `c`) as the actual parameters.
@@ -144,7 +146,7 @@ command depends on your present working directory), then please note that contex
    move toward the correct position. You should assume the node to insert is not already in the list.
   
 1. In your notes, draw the expected linked list after calling your new insert method from `main` passing in 
-   the `node` reference as the starting point along with a new node containing the string "Cupid". Your diagram 
+   the `b` reference as the starting point along with a new node containing the string "Cupid". Your diagram 
    should illustrate any nodes that have been created along with their associated string values and next 
    references.
 
