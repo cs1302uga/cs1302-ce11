@@ -48,7 +48,7 @@ command depends on your present working directory), then please note that contex
    the JAR file that you can use with the project.
 
 1. For convenience, here is a link to the 
-   [`StringList.Node` API Documentation](http://cobweb.cs.uga.edu/~mec/cs1302/listadt-api/cs1302/listadt/StringList.Node.html).
+   [`StringList.Node` API Documentation](http://cobweb.cs.uga.edu/~mec/cs1302/listadt-api/cs1302/listadt/StringList.Node.html) [[mirror]](https://michaelcotterell.com/listadt-api/cs1302/listadt/StringList.Node.html).
    What is the FQN of the _package_ that contains `StringList.Node`?
 
 1. Create a `Driver` program using the code below. Make sure you place the file in the proper directory
@@ -60,15 +60,19 @@ command depends on your present working directory), then please note that contex
    import cs1302.listadt.StringList;
 
    public class Driver {
+   
       public static void main(String[] args) {
 
         StringList.Node a = new StringList.Node();
         a.setStr("Billy");
+        
         new StringList.Node("Linda", a);
+        
         StringList.Node b = new StringList.Node("Juno");
         b.setNext(a);
         a.setNext(new StringList.Node("Sally"));
         b.getNext().getNext().setNext(new StringList.Node("Barry"));
+        
         StringList.Node c = b.getNext().getNext();
         c.getNext().setNext(new StringList.Node("Simon"));
 
@@ -80,6 +84,7 @@ command depends on your present working directory), then please note that contex
         a.setNext(new StringList.Node("Simone"));
 
         System.out.println(a.getNext().getNext());
+        
      } // main
 
    } // Driver
@@ -99,7 +104,6 @@ command depends on your present working directory), then please note that contex
                    | next ----------|--/    | next = null    |
                    \----------------/       \----------------/
    ```
-  
    
 1. In your notes, write your expected output for the five `System.out.println` statements in the code based 
    on the diagram you created in the previous step. 
