@@ -61,52 +61,76 @@ command depends on your present working directory), then please note that contex
 
    public class Driver {
    
-      public static void main(String[] args) {
+       public static void main(String[] args) {
 
-        StringList.Node a = new StringList.Node();
-        a.setStr("Billy");
+           // CODE BLOCK 1
+           StringList.Node a = new StringList.Node();
+           a.setStr("Billy");
         
-        new StringList.Node("Linda", a);
+           // CODE BLOCK 2
+           new StringList.Node("Linda", a);
         
-        StringList.Node b = new StringList.Node("Juno");
-        b.setNext(a);
-        a.setNext(new StringList.Node("Sally"));
-        b.getNext().getNext().setNext(new StringList.Node("Barry"));
+           // CODE BLOCK 3
+           StringList.Node b = new StringList.Node("Juno");
+           b.setNext(a);
+           a.setNext(new StringList.Node("Sally"));
+           b.getNext().getNext().setNext(new StringList.Node("Barry"));
         
-        StringList.Node c = b.getNext().getNext();
-        c.getNext().setNext(new StringList.Node("Simon"));
+           // CODE BLOCK 4
+           StringList.Node c = b.getNext().getNext();
+           c.getNext().setNext(new StringList.Node("Simon"));
 
-        System.out.println(c.getNext().getNext().getNext());
-        System.out.println(b.getStr());
-        System.out.println(a.getNext().getNext().getStr());
-        System.out.println(c.getNext().getNext().getStr());
+           // CODE BLOCK 5
+           System.out.println(c.getNext().getNext().getNext());
+           System.out.println(b.getStr());
+           System.out.println(a.getNext().getNext().getStr());
+           System.out.println(c.getNext().getNext().getStr());
 
-        a.setNext(new StringList.Node("Simone"));
+           // CODE BLOCK 6
+           a.setNext(new StringList.Node("Simone"));
 
-        System.out.println(a.getNext().getNext());
+           // CODE BLOCK 7
+           System.out.println(a.getNext().getNext());
         
-     } // main
+       } // main
 
    } // Driver
-    ```
-
-1. For each line in the program, draw a diagram that illustrates any nodes that have been created along with 
-   their associated string values and next references. Since `next` is a reference, you would either need to 
-   denote it as `null` or draw an arrow to the object it references. Redraw the entire picture after each line.
-   Although the associated string is also a reference, you may draw it within the node. Number each step in 
-   your notes. Reference variables that are not contained in node objects should also be included in the 
-   diagram. 
+   ```
+    
+1. **Please read this entire bullet point, including sub-bullets, before continuing.**
+   For _each line_ in **`CODE BLOCK 1`, `CODE BLOCK 2`, and `CODE BLOCK 3`**, draw a diagram that 
+   illustrates any nodes that have been created along with their associated `str` and `next` references. 
+   Since `next` is a reference, you would either need to denote it as `null` or draw an arrow to 
+   the object it references. **Redraw the entire picture after each line.** Here are some things
+   to note:
    
-   Example:
+   * Although the associated string is also a reference, you may draw it within the node. 
+   * Number each step in your notes. There are 7 lines among `CODE BLOCK 1`, `CODE BLOCK 2`, and `CODE BLOCK 3`,
+     so we expect 7 steps in your notes for this part. 
+   * Reference variables that are not contained in node objects (e.g., `a`, `b`, and `c`) 
+     should also be included in the diagram.
+
+   Here is an example diagram:
    ```
                    /----------------\       /----------------\
    example ------->| str -> "Hello" |   /-->| str -> "World" |
                    | next ----------|--/    | next = null    |
                    \----------------/       \----------------/
    ```
+
+**CHECKPOINT**
+
+1. 1. **Please read this entire bullet point, including sub-bullets, before continuing.**
+   For _each line_ in **`CODE BLOCK 4`, `CODE BLOCK 5`, `CODE BLOCK 6`, and `CODE BLOCK 7`**, 
+   draw a diagram that illustrates any nodes that have been created along with their associated 
+   `str` and `next` references. Like before, **redraw the entire picture after each line.** 
+   Here are some things
+   to note:
    
-1. In your notes, write your expected output for the five `System.out.println` statements in the code based 
-   on the diagram you created in the previous step. 
+   * Number each step in your notes, starting with 8 (which is the first line in `CODE BLOCK 4`).
+     There are 8 lines among `CODE BLOCK 4`, `CODE BLOCK 5`, `CODE BLOCK 6`, and `CODE BLOCK 7`,
+     so we expect 8 steps in your notes for this part.
+   * If a line contains a `println` statement, then you can simply write its output.
    
 1. Make sure you are in the `cs1302-ce11` directory. Write the exact command to:
    1. Compile `Driver.java` specifying `bin` as the default package location for your compiled code.
@@ -116,8 +140,10 @@ command depends on your present working directory), then please note that contex
    into `bin`; and ii) the compiled code in the JAR file. You will need to place the paths to the default 
    package locations for both on the class path in order to run your program.
 
-1. Write the output from the program in your notes. If your expected output does not match the output from the 
-   program execution, repeat the last three steps using a new piece of paper.
+1. Write the output from the program in your notes. If your output for lines 10, 11, 12, and 13 (from
+   `CODE BLOCK 5`) and line 17 (from `CODE BLOCK 7`) does not match the output from the 
+   program execution, then make a note of it, then try to fix your diagrams and output 
+   before claiming this checkpoint.
    
 **CHECKPOINT**
 
