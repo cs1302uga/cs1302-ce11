@@ -48,31 +48,34 @@ command depends on your present working directory), then please note that contex
    within `src`.
 
    ```java
-    package cs1302.list;
-    
-    import cs1302.listadt.StringList;
-    
-    public class Driver {
-    
-        public static void main(String[] args) {
-        
-            StringList.Node node = new StringList.Node();
-            node.setStr("Susan");
-            node.setNext(new StringList.Node("Sally"));
-            node.getNext().setNext(new StringList.Node("Barry"));
+   package cs1302.list;
 
-            StringList.Node end = new StringList.Node("Supa Mike", node);
-            StringList.Node n = node.getNext();
-            n.setNext(new StringList.Node("Simon"));
+   import cs1302.listadt.StringList;
 
-            System.out.println(end.getNext());           
-            System.out.println(node.getNext().getStr()); 
-            System.out.println(n.getNext().getNext());   
-            System.out.println(n.getNext().getStr());    
+   public class Driver {
+      public static void main(String[] args) {
 
-        } // main
-        
-    } // Driver
+        StringList.Node a = new StringList.Node();
+        a.setStr("Billy");
+        new StringList.Node("Linda", a);
+        StringList.Node b = new StringList.Node("Juno");
+        b.setNext(a);
+        a.setNext(new StringList.Node("Sally"));
+        b.getNext().getNext().setNext(new StringList.Node("Barry"));
+        StringList.Node c = b.getNext().getNext();
+        c.getNext().setNext(new StringList.Node("Simon"));
+
+        System.out.println(c.getNext().getNext().getNext());
+        System.out.println(b.getStr());
+        System.out.println(a.getNext().getNext().getStr());
+        System.out.println(c.getNext().getNext().getStr());
+
+        a.setNext(new StringList.Node("Simone"));
+
+        System.out.println(a.getNext().getNext());
+     } // main
+
+   } // Driver
     ```
 
 1. For each line in the program, draw a diagram that illustrates any nodes that have been created along with 
@@ -91,7 +94,7 @@ command depends on your present working directory), then please note that contex
    ```
   
    
-1. In your notes, write your expected output for the four `System.out.println` statements in the code based 
+1. In your notes, write your expected output for the five `System.out.println` statements in the code based 
    on the diagram you created in the previous step. 
    
 1. Make sure you are in the `cs1302-ce11` directory. Write the exact command to:
