@@ -1,5 +1,7 @@
 # cs1302-ce11 Lovable Linked Lists 
 
+![Approved for: Fall 2019](https://img.shields.io/badge/Approved%20for-Fall%202019-brightgreen)
+
 > Roses are red. 
 > Violets are blue. 
 > `error: ';' expected` in `Driver.java` on line `142`.
