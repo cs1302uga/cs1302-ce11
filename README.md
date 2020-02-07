@@ -195,7 +195,7 @@ command depends on your present working directory), then please note that contex
    printNode(c.getNext(), 3);
    ```
       
-1. Compile and run your `Driver` program. 
+1. Compile and run your `Driver` program. Then, make sure it passes the `checkstyle` audit.
 
 1. Write the output from the program in your notes. If your expected output does not match the output from the 
    program execution, indicate the reason(s) in your notes.
