@@ -99,22 +99,9 @@ command depends on your present working directory), then please note that contex
 
    } // Driver
    ```
-    
-1. **Please read this entire bullet point, including sub-bullets, before continuing.**
-   For _each line_ in **`CODE BLOCK 1`, `CODE BLOCK 2`, and `CODE BLOCK 3`**, draw a diagram that 
-   illustrates any nodes that have been created along with their associated `str` and `next` references. 
-   Since `next` is a reference, you would either need to denote it as `null` or draw an arrow to 
-   the object it references. **Redraw the entire picture after each line.** Here are some things
-   to note:
-   
-   * Although the associated string is also a reference, you may draw it within the node. 
-   * Number each step in your notes. There are 7 lines among `CODE BLOCK 1`, `CODE BLOCK 2`, and `CODE BLOCK 3`,
-     so we expect 7 steps in your notes for this part. 
-   * Reference variables that are not contained in node objects (e.g., `a`, `b`, and `c`) 
-     should also be included in the diagram.
 
-   **We are serious about redrawing the entire picture after each line.** 
-   Here is some example code:
+1. **Please read this entire bullet point, including sub-bullets, before continuing.**
+   Consider the following example code snippet:
    
    ```java
    StringList.Node example;                        // line 1
@@ -122,7 +109,9 @@ command depends on your present working directory), then please note that contex
    example.setNext(new StringList.Node("World"));  // line 3
    ```
    
-   Here are the three corresponding diagrams, one for each line:
+   **We can illustrate this snippet by drawing a diagram for the first line**, 
+   then **redrawing the entire driagram after subsequent lines.** Here are the 
+   three corresponding diagrams, one for each line in the example:
    
    ```
    // after line 1
@@ -144,6 +133,21 @@ command depends on your present working directory), then please note that contex
                    | next ----------|--/    | next = null    |
                    \----------------/       \----------------/
    ```
+
+   Now, for _each line_ in **`CODE BLOCK 1`, `CODE BLOCK 2`, and `CODE BLOCK 3`**, draw a diagram that 
+   illustrates any nodes that have been created along with their associated `str` and `next` references. 
+   Since `next` is a reference, you would either need to denote it as `null` or draw an arrow to 
+   the object it references. **Redraw the entire picture after each line.** Here are some things
+   to note:
+   
+   * Although the associated string is also a reference, you may draw it within the node. 
+   * Number each step in your notes. There are 7 lines among `CODE BLOCK 1`, `CODE BLOCK 2`, and `CODE BLOCK 3`,
+     so we expect 7 steps/diagrams in your notes for this part. 
+   * Reference variables that are not contained in node objects (e.g., `a`, `b`, and `c`) 
+     should also be included in the diagram.
+
+   **We are serious about redrawing the entire picture after each line.** 
+   If you're unsure what we mean, then ask.   
 
 **CHECKPOINT**
 
