@@ -12,7 +12,7 @@ This class exercise explores how to work with linked lists.
 ## Prerequisite Knowledge
 
 * Reference variables.
-* [`StringList.Node` API Documentation](http://cobweb.cs.uga.edu/~mec/cs1302/listadt-api/cs1302/listadt/StringList.Node.html) [[mirror]](https://michaelcotterell.com/listadt-api/cs1302/listadt/StringList.Node.html)
+* [`StringList.Node` API Documentation](http://cobweb.cs.uga.edu/~mec/cs1302/listadt-api/cs1302/listadt/StringList.Node.html)
 
 ## Course-Specific Learning Outcomes
 
@@ -51,7 +51,7 @@ command depends on your present working directory), then please note that contex
    the JAR file that you can use with the project.
 
 1. For convenience, here is a link to the 
-   [`StringList.Node` API Documentation](http://cobweb.cs.uga.edu/~mec/cs1302/listadt-api/cs1302/listadt/StringList.Node.html) [[mirror]](https://michaelcotterell.com/listadt-api/cs1302/listadt/StringList.Node.html).
+   [`StringList.Node` API Documentation](http://cobweb.cs.uga.edu/~mec/cs1302/listadt-api/cs1302/listadt/StringList.Node.html).
    What is the FQN of the _package_ that contains `StringList.Node`?
 
 1. Create a `Driver` program using the code below. Make sure you place the file in the proper directory
@@ -113,8 +113,32 @@ command depends on your present working directory), then please note that contex
    * Reference variables that are not contained in node objects (e.g., `a`, `b`, and `c`) 
      should also be included in the diagram.
 
-   Here is an example diagram:
+   **We are serious about R=redrawing the entire picture after each line.** 
+   Here is some example code:
+   
+   ```java
+   StringList.Node example;                        // line 1
+   example = new StringList.Node("Hello");         // line 2
+   example.setNext(new StringList.Node("World"));  // line 3
    ```
+   
+   Here are the three corresponding diagrams, one for each line:
+   
+   ```
+   // after line 1
+   example = null
+   ```
+   
+   ```
+   // after line 2
+                   /----------------\
+   example ------->| str -> "Hello" |
+                   | next = null    |
+                   \----------------/
+   ```
+   
+   ```
+   // after line 3
                    /----------------\       /----------------\
    example ------->| str -> "Hello" |   /-->| str -> "World" |
                    | next ----------|--/    | next = null    |
