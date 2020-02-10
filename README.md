@@ -104,7 +104,7 @@ command depends on your present working directory), then please note that contex
    Consider the following example code snippet:
    
    ```java
-   StringList.Node example;                        // line 1
+   StringList.Node example = null;                 // line 1
    example = new StringList.Node("Hello");         // line 2
    example.setNext(new StringList.Node("World"));  // line 3
    ```
