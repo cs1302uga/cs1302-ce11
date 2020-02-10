@@ -7,7 +7,7 @@
 > Violets are blue. 
 > `error: ';' expected` in `Driver.java` on line `142`.
 
-This class exercise explores how to work with linked lists.
+This class exercise explores how to work with nodes commonly used in linked lists. 
 
 ## Prerequisite Knowledge
 
