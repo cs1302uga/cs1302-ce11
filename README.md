@@ -113,7 +113,7 @@ command depends on your present working directory), then please note that contex
    * Reference variables that are not contained in node objects (e.g., `a`, `b`, and `c`) 
      should also be included in the diagram.
 
-   **We are serious about R=redrawing the entire picture after each line.** 
+   **We are serious about redrawing the entire picture after each line.** 
    Here is some example code:
    
    ```java
