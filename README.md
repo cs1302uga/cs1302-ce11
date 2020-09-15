@@ -23,7 +23,7 @@ and stacks in solving typical problems.  Generate user-facing API documentation 
 ## Questions
 
 In your notes, clearly answer the following questions. These instructions assume that you are 
-logged into the Nike server. 
+logged into the Odin server. 
 
 **NOTE:** If a step requires you to enter in a command, please provide in your notes the full 
 command that you typed to make the related action happen. If context is necessary (e.g., the 
@@ -33,7 +33,7 @@ command depends on your present working directory), then please note that contex
 
 ### Checkpoint 1 Steps - Getting Started
 
-1. Use Git to clone the repository for this exercise onto Nike into a subdirectory called `cs1302-ce11`:
+1. Use Git to clone the repository for this exercise onto Odin into a subdirectory called `cs1302-ce11`:
 
    ```
    $ git clone --depth 1 https://github.com/cs1302uga/cs1302-ce11.git
