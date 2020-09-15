@@ -1,7 +1,6 @@
 # cs1302-ce11 Lovable Linked Lists 
 
-![Approved for: Spring 2020](https://img.shields.io/badge/Approved%20for-Spring%202020-blue)
-![Max Group Size: 3](https://img.shields.io/badge/Max%20Group%20Size-3-important)
+![Approved for: Fall 2020](https://img.shields.io/badge/Approved%20for-Fall%202020-blueviolet)
 
 > Roses are red. 
 > Violets are blue. 
@@ -11,7 +10,7 @@ This class exercise explores how to work with nodes commonly used in linked list
 
 ## Prerequisite Knowledge
 
-* Reference variables.
+* [CSCI 1302 Reference Variable Refresher](https://github.com/cs1302uga/cs1302-tutorials/blob/master/refresher/variables.md)
 * [`StringList.Node` API Documentation](http://cobweb.cs.uga.edu/~mec/cs1302/listadt-api/cs1302/listadt/StringList.Node.html)
 
 ## Course-Specific Learning Outcomes
@@ -30,7 +29,9 @@ logged into the Nike server.
 command that you typed to make the related action happen. If context is necessary (e.g., the 
 command depends on your present working directory), then please note that context as well.
 
-### Getting Started
+## Exercise Steps
+
+### Checkpoint 1 Steps - Getting Started
 
 1. Use Git to clone the repository for this exercise onto Nike into a subdirectory called `cs1302-ce11`:
 
@@ -146,10 +147,16 @@ command depends on your present working directory), then please note that contex
    * Reference variables that are not contained in node objects (e.g., `a`, `b`, and `c`) 
      should also be included in the diagram.
 
-   **We are serious about redrawing the entire picture after each line.** 
+   **Really, redraw the entire picture after each line.** 
    If you're unsure what we mean, then ask.   
 
-**CHECKPOINT**
+<hr/>
+
+![CP](https://img.shields.io/badge/Just%20Finished%20Checkpoint-1-success?style=for-the-badge)
+
+<hr/>
+
+### Checkpoint 2 Steps
 
 1. **Please read this entire bullet point, including sub-bullets, before continuing.**
    For _each line_ in **`CODE BLOCK 4`, `CODE BLOCK 5`, `CODE BLOCK 6`, and `CODE BLOCK 7`**, 
@@ -175,7 +182,13 @@ command depends on your present working directory), then please note that contex
    program execution, then make a note of it, then try to fix your diagrams and output 
    before claiming this checkpoint.
    
-**CHECKPOINT**
+<hr/>
+
+![CP](https://img.shields.io/badge/Just%20Finished%20Checkpoint-2-success?style=for-the-badge)
+
+<hr/>
+
+### Checkpoint 3 Steps
 
 1. In `Driver.java`, remove the last two Java instructions from the `main` method.
 
@@ -227,7 +240,9 @@ command depends on your present working directory), then please note that contex
 1. Write the output from the program in your notes. If your expected output does not match the output from the 
    program execution, indicate the reason(s) in your notes.
 
-**CHECKPOINT**
+<hr/>
+
+![CP](https://img.shields.io/badge/Just%20Finished%20Checkpoint-3-success?style=for-the-badge)
 
 <hr/>
 
